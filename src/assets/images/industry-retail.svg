@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#14293C"/>
+  <g stroke="#3AA3DC" stroke-opacity="0.09">
+    <path d="M0 150H800M0 300H800M0 450H800"/>
+    <path d="M160 0V600M320 0V600M480 0V600M640 0V600"/>
+  </g>
+  <!-- Omnichannel Retail Matrix -->
+  <rect x="96" y="96" width="280" height="190" rx="14" fill="#1B364F" stroke="#3AA3DC" stroke-width="2"/>
+  <rect x="424" y="96" width="280" height="190" rx="14" fill="#1B364F" stroke="#60C3F7" stroke-width="2"/>
+  <rect x="96" y="314" width="608" height="190" rx="14" fill="#102131" stroke="#3AA3DC" stroke-opacity="0.6" stroke-width="2"/>
+  <!-- Storefront + e-commerce sync bars -->
+  <rect x="130" y="132" width="120" height="12" rx="6" fill="#3AA3DC"/>
+  <rect x="130" y="166" width="212" height="84" rx="8" fill="#112334"/>
+  <rect x="152" y="200" width="28" height="34" rx="4" fill="#3AA3DC"/>
+  <rect x="192" y="186" width="28" height="48" rx="4" fill="#60C3F7"/>
+  <rect x="232" y="210" width="28" height="24" rx="4" fill="#3AA3DC" fill-opacity="0.6"/>
+  <rect x="272" y="180" width="28" height="54" rx="4" fill="#E2F1FA"/>
+
+  <rect x="458" y="132" width="136" height="12" rx="6" fill="#60C3F7"/>
+  <circle cx="564" cy="212" r="46" stroke="#3AA3DC" stroke-width="10"/>
+  <path d="M564 166 A46 46 0 0 1 610 212" stroke="#E2F1FA" stroke-width="10" stroke-linecap="round"/>
+
+  <path d="M140 436 L240 398 L340 418 L440 362 L540 382 L650 340" stroke="#3AA3DC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="440" cy="362" r="7" fill="#FFFFFF" stroke="#3AA3DC" stroke-width="3"/>
+  <circle cx="650" cy="340" r="7" fill="#60C3F7"/>
+</svg>

@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-navy: #1D354C;
+  --color-brand-navy-deep: #0B2233;
+  --color-brand-green: #10B857;
+  --color-brand-green-dark: #0D9647;
+  --color-brand-cyan: #17B7DF;
+  --color-brand-cyan-dark: #0D8FB0;
+  --color-brand-blue: #3AA3DC;
+  --color-surface-canvas: #F8FAFC;
+  --color-surface-subtle: #F1F5F9;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reference Talentica footer emerald-to-cyan gradient */
+.bg-talentica-footer {
+  background-color: #0a222f;
+  background-image: linear-gradient(
+    82deg,
+    rgb(16 184 87 / 0.86) 0%,
+    rgb(16 184 87 / 0.86) 1%,
+    rgb(23 183 223 / 0.86) 100%
+  );
+}
+
+/* Reference Talentica DevX AI Pods section gradient */
+.bg-devx-pods {
+  background: linear-gradient(135deg, #0d1b2a 0%, #0e2a1e 100%);
+}
+
+/* Reference Talentica DevX AI Pods card top bar */
+.devx-card-top-bar {
+  background: linear-gradient(
+    90deg,
+    #16b7d2 0%,
+    #13b7cb 7.14%,
+    #11b8c4 14.29%,
+    #0eb8bc 21.43%,
+    #0cb8b5 28.57%,
+    #0ab8ae 35.71%,
+    #09b9a6 42.86%,
+    #08b99f 50%,
+    #08b997 57.14%,
+    #08b98f 64.29%,
+    #09b987 71.43%,
+    #0bb97f 78.57%,
+    #0db876 85.71%,
+    #0fb86d 92.86%,
+    #11b864 100%
+  );
+}
+
+/* Reference Talentica primary gradient accent */
+.bg-talentica-gradient {
+  background-image: linear-gradient(82deg, #10B857 0%, #17B7DF 100%);
+}
+
+/* Subtle architectural grid background for light sections */
+.bg-architectural-grid {
+  background-image:
+    linear-gradient(to right, rgba(16, 184, 87, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 183, 223, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Subtle architectural grid background for dark navy sections */
+.bg-navy-grid {
+  background-image:
+    linear-gradient(to right, rgba(23, 183, 223, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 184, 87, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#183046"/>
+  <g stroke="#3AA3DC" stroke-opacity="0.09">
+    <path d="M0 120H800M0 240H800M0 360H800M0 480H800"/>
+    <path d="M200 0V600M400 0V600M600 0V600"/>
+  </g>
+  <!-- Risk modeling & claims verification shield geometry -->
+  <path d="M400 96 L580 162 V318 C580 424 504 494 400 524 C296 494 220 424 220 318 V162 L400 96 Z" fill="#122436" stroke="#3AA3DC" stroke-width="2.5"/>
+  <path d="M400 138 L536 188 V312 C536 394 478 448 400 474 C322 448 264 394 264 312 V188 L400 138 Z" fill="#1B3752" stroke="#60C3F7" stroke-opacity="0.5" stroke-width="1.5"/>
+  <!-- Actuarial curve inside -->
+  <path d="M294 338 C 334 338, 356 244, 400 244 C 444 244, 466 338, 506 338" stroke="#3AA3DC" stroke-width="4" stroke-linecap="round"/>
+  <line x1="294" y1="364" x2="506" y2="364" stroke="#60C3F7" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="400" cy="244" r="7" fill="#FFFFFF" stroke="#3AA3DC" stroke-width="3"/>
+</svg>

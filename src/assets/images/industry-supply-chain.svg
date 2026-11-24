@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#132537"/>
+  <g stroke="#3AA3DC" stroke-opacity="0.1">
+    <path d="M0 150H800M0 300H800M0 450H800"/>
+    <path d="M160 0V600M320 0V600M480 0V600M640 0V600"/>
+  </g>
+  <!-- Logistics routing arcs -->
+  <path d="M140 430 C 260 220, 420 180, 660 190" stroke="#3AA3DC" stroke-width="3" stroke-linecap="round"/>
+  <path d="M140 430 C 310 380, 460 360, 660 410" stroke="#60C3F7" stroke-width="2.5" stroke-dasharray="8 6" stroke-linecap="round"/>
+  <path d="M360 245 L500 355 L660 190" stroke="#94C8E8" stroke-opacity="0.5" stroke-width="2"/>
+  <!-- Hub containers -->
+  <rect x="88" y="392" width="108" height="76" rx="10" fill="#1B364F" stroke="#3AA3DC" stroke-width="2"/>
+  <rect x="306" y="206" width="108" height="76" rx="10" fill="#1B364F" stroke="#60C3F7" stroke-width="2"/>
+  <rect x="446" y="316" width="108" height="76" rx="10" fill="#1B364F" stroke="#3AA3DC" stroke-width="2"/>
+  <rect x="606" y="152" width="108" height="76" rx="10" fill="#214260" stroke="#60C3F7" stroke-width="2"/>
+  <rect x="606" y="372" width="108" height="76" rx="10" fill="#1B364F" stroke="#3AA3DC" stroke-width="2"/>
+  <circle cx="142" cy="430" r="8" fill="#60C3F7"/>
+  <circle cx="360" cy="244" r="8" fill="#3AA3DC"/>
+  <circle cx="500" cy="354" r="8" fill="#60C3F7"/>
+  <circle cx="660" cy="190" r="8" fill="#FFFFFF"/>
+  <circle cx="660" cy="410" r="8" fill="#3AA3DC"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#152B40"/>
+  <g stroke="#3AA3DC" stroke-opacity="0.09">
+    <path d="M0 150H800M0 300H800M0 450H800"/>
+    <path d="M200 0V600M400 0V600M600 0V600"/>
+  </g>
+  <rect x="86" y="110" width="248" height="380" rx="14" fill="#102131" stroke="#64748B" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="114" y="148" width="192" height="54" rx="8" fill="#1A334B"/>
+  <rect x="114" y="220" width="192" height="54" rx="8" fill="#1A334B"/>
+  <rect x="114" y="292" width="192" height="54" rx="8" fill="#1A334B"/>
+  <rect x="114" y="364" width="192" height="54" rx="8" fill="#1A334B"/>
+  <path d="M356 300 H448" stroke="#3AA3DC" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="444,292 460,300 444,308" fill="#3AA3DC"/>
+  <rect x="476" y="110" width="238" height="176" rx="14" fill="#1D3A54" stroke="#3AA3DC" stroke-width="2"/>
+  <rect x="476" y="314" width="238" height="176" rx="14" fill="#1D3A54" stroke="#60C3F7" stroke-width="2"/>
+  <rect x="504" y="144" width="110" height="12" rx="6" fill="#3AA3DC"/>
+  <rect x="504" y="176" width="176" height="72" rx="8" fill="#102131"/>
+  <rect x="504" y="348" width="124" height="12" rx="6" fill="#60C3F7"/>
+  <rect x="504" y="380" width="176" height="72" rx="8" fill="#102131"/>
+</svg>

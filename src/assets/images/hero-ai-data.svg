@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg-ai" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E1D2C"/>
+      <stop offset="55%" stop-color="#1D354C"/>
+      <stop offset="100%" stop-color="#14293D"/>
+    </linearGradient>
+    <linearGradient id="accent-beam" x1="200" y1="120" x2="1000" y2="555" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3AA3DC" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#60C3F7" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="glow-ai" cx="65%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#3AA3DC" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1D354C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg-ai)"/>
+  <rect width="1200" height="675" fill="url(#glow-ai)"/>
+  <!-- Architectural grid -->
+  <g stroke="#3AA3DC" stroke-opacity="0.1" stroke-width="1">
+    <path d="M0 135H1200M0 270H1200M0 405H1200M0 540H1200"/>
+    <path d="M150 0V675M300 0V675M450 0V675M600 0V675M750 0V675M900 0V675M1050 0V675"/>
+  </g>
+  <!-- Lakehouse layered isometric platforms -->
+  <g transform="translate(560, 120)">
+    <rect x="60" y="310" width="460" height="140" rx="14" fill="#132537" stroke="#3AA3DC" stroke-opacity="0.35" stroke-width="1.5"/>
+    <rect x="110" y="210" width="360" height="110" rx="12" fill="#1A334B" stroke="#3AA3DC" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="160" y="105" width="260" height="115" rx="12" fill="#214260" stroke="#60C3F7" stroke-opacity="0.8" stroke-width="2"/>
+    <!-- Neural pipeline flow bars -->
+    <rect x="188" y="136" width="120" height="10" rx="5" fill="#3AA3DC"/>
+    <rect x="188" y="160" width="196" height="8" rx="4" fill="#94C8E8" fill-opacity="0.45"/>
+    <rect x="188" y="180" width="150" height="8" rx="4" fill="#94C8E8" fill-opacity="0.3"/>
+    <!-- Lower telemetry bars -->
+    <rect x="140" y="242" width="84" height="44" rx="6" fill="#0F2030" stroke="#3AA3DC" stroke-opacity="0.4"/>
+    <rect x="242" y="242" width="84" height="44" rx="6" fill="#0F2030" stroke="#3AA3DC" stroke-opacity="0.4"/>
+    <rect x="344" y="242" width="96" height="44" rx="6" fill="#0F2030" stroke="#3AA3DC" stroke-opacity="0.4"/>
+    <path d="M156 270 L174 256 L190 264 L208 250" stroke="#3AA3DC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M258 272 L276 266 L292 252 L310 258" stroke="#60C3F7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="372" cy="264" r="10" stroke="#3AA3DC" stroke-width="2.5"/>
+    <circle cx="406" cy="264" r="10" fill="#3AA3DC" fill-opacity="0.35"/>
+  </g>
+  <!-- Left ingestion nodes -->
+  <g stroke="url(#accent-beam)" stroke-width="2" fill="none">
+    <path d="M140 200 C 310 200, 380 280, 620 280"/>
+    <path d="M140 340 C 330 340, 420 340, 620 340"/>
+    <path d="M140 480 C 320 480, 400 390, 620 390"/>
+  </g>
+  <g fill="#162D43" stroke="#3AA3DC" stroke-width="2">
+    <rect x="96" y="176" width="110" height="48" rx="8"/>
+    <rect x="96" y="316" width="110" height="48" rx="8"/>
+    <rect x="96" y="456" width="110" height="48" rx="8"/>
+  </g>
+  <g fill="#E2F1FA">
+    <rect x="116" y="195" width="70" height="8" rx="4" fill-opacity="0.75"/>
+    <rect x="116" y="335" width="54" height="8" rx="4" fill="#3AA3DC"/>
+    <rect x="116" y="475" width="66" height="8" rx="4" fill-opacity="0.75"/>
+  </g>
+  <!-- Output nodes -->
+  <circle cx="620" cy="280" r="6" fill="#60C3F7"/>
+  <circle cx="620" cy="340" r="6" fill="#60C3F7"/>
+  <circle cx="620" cy="390" r="6" fill="#60C3F7"/>
+</svg>

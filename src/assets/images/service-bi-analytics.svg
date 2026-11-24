@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#162C41"/>
+  <g stroke="#3AA3DC" stroke-opacity="0.09">
+    <path d="M0 120H800M0 240H800M0 360H800M0 480H800"/>
+    <path d="M160 0V600M320 0V600M480 0V600M640 0V600"/>
+  </g>
+  <!-- BI Executive Workspace -->
+  <rect x="64" y="76" width="672" height="448" rx="16" fill="#102131" stroke="#3AA3DC" stroke-opacity="0.4" stroke-width="1.5"/>
+  <rect x="96" y="108" width="184" height="106" rx="10" fill="#1B354E" stroke="#3AA3DC" stroke-opacity="0.35"/>
+  <rect x="308" y="108" width="184" height="106" rx="10" fill="#1B354E" stroke="#3AA3DC" stroke-opacity="0.35"/>
+  <rect x="520" y="108" width="184" height="106" rx="10" fill="#1B354E" stroke="#3AA3DC" stroke-opacity="0.35"/>
+  <rect x="118" y="132" width="70" height="8" rx="4" fill="#94C8E8" fill-opacity="0.6"/>
+  <rect x="118" y="156" width="110" height="22" rx="4" fill="#3AA3DC"/>
+  <rect x="330" y="132" width="84" height="8" rx="4" fill="#94C8E8" fill-opacity="0.6"/>
+  <rect x="330" y="156" width="96" height="22" rx="4" fill="#60C3F7"/>
+  <rect x="542" y="132" width="76" height="8" rx="4" fill="#94C8E8" fill-opacity="0.6"/>
+  <rect x="542" y="156" width="124" height="22" rx="4" fill="#E2F1FA"/>
+  <!-- Main forecast chart -->
+  <rect x="96" y="242" width="400" height="248" rx="10" fill="#152B40" stroke="#3AA3DC" stroke-opacity="0.3"/>
+  <path d="M126 420 L190 385 L254 398 L318 338 L382 350 L460 282" stroke="#3AA3DC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126 446 L190 432 L254 416 L318 388 L382 396 L460 342" stroke="#60C3F7" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+  <circle cx="318" cy="338" r="6" fill="#60C3F7"/>
+  <circle cx="460" cy="282" r="7" fill="#FFFFFF" stroke="#3AA3DC" stroke-width="3"/>
+  <!-- Cohort breakdown -->
+  <rect x="520" y="242" width="184" height="248" rx="10" fill="#152B40" stroke="#3AA3DC" stroke-opacity="0.3"/>
+  <rect x="548" y="402" width="24" height="58" rx="4" fill="#3AA3DC" fill-opacity="0.55"/>
+  <rect x="584" y="362" width="24" height="98" rx="4" fill="#3AA3DC" fill-opacity="0.8"/>
+  <rect x="620" y="324" width="24" height="136" rx="4" fill="#60C3F7"/>
+  <rect x="656" y="346" width="24" height="114" rx="4" fill="#3AA3DC" fill-opacity="0.7"/>
+</svg>
