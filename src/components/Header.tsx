@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ activePage }) => {
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         {/* Zone 1: Pure white transparent SaaralTech logo at top, colored transparent on scroll */}
         <a
-          href="/index.html"
+          href="/"
           className="block h-10 sm:h-11 aspect-[1208/228] shrink-0 bg-contain bg-left bg-no-repeat focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B857] rounded"
           style={{ backgroundImage: `url('${activeLogo}')` }}
           aria-label="SaaralTech Solutions Home"
@@ -99,7 +99,7 @@ export const Header: React.FC<HeaderProps> = ({ activePage }) => {
         {/* Zone 3: Primary Contact CTA & Mobile Drawer Trigger */}
         <div className="flex items-center gap-3 shrink-0">
           <a
-            href="/contact.html"
+            href="/contact-us/"
             aria-current={activePage === 'contact' ? 'page' : undefined}
             className={`hidden sm:inline-flex items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold whitespace-nowrap shrink-0 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B857] ${
               useLightSurface
@@ -158,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({ activePage }) => {
               );
             })}
             <a
-              href="/contact.html"
+              href="/contact-us/"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-3 flex min-h-[44px] items-center justify-center rounded-md bg-[#10B857] px-5 py-3 text-base font-semibold text-white hover:bg-[#0D9647] transition-colors"
             >

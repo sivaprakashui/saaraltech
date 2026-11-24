@@ -60,14 +60,14 @@ export const HomePage: React.FC = () => {
               className="flex flex-wrap items-center justify-center gap-4 pt-3"
             >
               <a
-                href="/services.html"
+                href="/services/"
                 className="inline-flex items-center gap-2 rounded-md bg-[#10B857] px-7 py-3.5 text-sm font-semibold text-white hover:bg-[#0D9647] transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white shadow-sm"
               >
                 <span>Explore Engineering Services</span>
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </a>
               <a
-                href="/contact.html"
+                href="/contact-us/"
                 className="inline-flex items-center gap-2 rounded-md border border-white/55 bg-[#082433]/40 px-6 py-3.5 text-sm font-semibold text-white hover:bg-white hover:text-[#0B2536] transition-colors whitespace-nowrap shrink-0 backdrop-blur-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
               >
                 <span>Schedule a Consultation</span>
@@ -122,7 +122,7 @@ export const HomePage: React.FC = () => {
               </ul>
               <div className="pt-3">
                 <a
-                  href="/about.html"
+                  href="/about-us/"
                   className="inline-flex items-center gap-2 rounded-md border border-[#0B2536] px-5 py-3 text-sm font-semibold text-[#0B2536] hover:bg-[#10B857] hover:border-[#10B857] hover:text-white transition-colors whitespace-nowrap"
                 >
                   <span>Read Our Company Story</span>
@@ -156,7 +156,7 @@ export const HomePage: React.FC = () => {
               </h2>
             </div>
             <a
-              href="/services.html"
+              href="/services/"
               className="inline-flex items-center gap-2 text-sm font-semibold text-[#10b857] hover:text-white transition-colors whitespace-nowrap shrink-0"
             >
               <span>View All Service Specifications</span>
@@ -200,7 +200,7 @@ export const HomePage: React.FC = () => {
                       <span>{service.outcomes[0].label}</span>
                     </div>
                     <a
-                      href={`/services.html#${service.id}`}
+                      href={`/services/#${service.id}`}
                       className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#10b857] hover:text-white transition-colors whitespace-nowrap shrink-0"
                     >
                       <span>Details</span>
@@ -225,7 +225,7 @@ export const HomePage: React.FC = () => {
               </h2>
             </div>
             <a
-              href="/industries.html"
+              href="/industries/"
               className="inline-flex items-center gap-2 text-sm font-semibold text-[#0B2536] hover:text-[#0D8FB0] transition-colors whitespace-nowrap shrink-0"
             >
               <span>Explore Industry Solutions</span>
@@ -237,7 +237,7 @@ export const HomePage: React.FC = () => {
             {INDUSTRIES.map((industry) => (
               <a
                 key={industry.id}
-                href={`/industries.html#${industry.id}`}
+                href={`/industries/#${industry.id}`}
                 data-gsap-item
                 className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition-colors hover:border-[#17B7DF]"
               >
@@ -292,7 +292,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
             <a
-              href="/projects.html"
+              href="/projects/"
               className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:underline transition-colors whitespace-nowrap shrink-0"
             >
               <span>Browse Full Portfolio</span>
@@ -342,7 +342,7 @@ export const HomePage: React.FC = () => {
 
                     <div className="mt-8">
                       <a
-                        href="/projects.html"
+                        href="/projects/"
                         className="inline-flex items-center gap-2 rounded-full border-2 border-[#10b857] px-7 py-2.5 text-[15px] font-semibold text-[#10b857] hover:bg-gradient-to-r hover:from-[#10b857] hover:to-[#17b7df] hover:text-white hover:border-transparent transition-all duration-200 whitespace-nowrap"
                       >
                         <span>Read More</span>

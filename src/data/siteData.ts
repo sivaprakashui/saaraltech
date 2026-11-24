@@ -19,11 +19,11 @@ export const COMPANY_INFO = {
 } as const;
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '/index.html', key: 'home' },
-  { label: 'About Us', href: '/about.html', key: 'about' },
-  { label: 'Services', href: '/services.html', key: 'services' },
-  { label: 'Industries', href: '/industries.html', key: 'industries' },
-  { label: 'Projects', href: '/projects.html', key: 'projects' },
+  { label: 'Home', href: '/', key: 'home' },
+  { label: 'About Us', href: '/about-us/', key: 'about' },
+  { label: 'Services', href: '/services/', key: 'services' },
+  { label: 'Industries', href: '/industries/', key: 'industries' },
+  { label: 'Projects', href: '/projects/', key: 'projects' },
 ];
 
 export interface HeroSlide {
@@ -49,9 +49,9 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       'We architect unified data lakehouses, automated machine learning workflows, and real-time analytics engines that convert fragmented operational records into reliable decisions.',
     ctaLabel: 'Explore AI Engineering',
-    ctaHref: '/services.html#ai-data',
+    ctaHref: '/services/#ai-data',
     secondaryLabel: 'Schedule Consultation',
-    secondaryHref: '/contact.html',
+    secondaryHref: '/contact-us/',
     image: SITE_IMAGES.heroSlides.aiData,
     imageAlt: 'Enterprise AI and data lakehouse pipeline architecture visualization',
     highlightStat: '99.95%',
@@ -64,9 +64,9 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       'Standardize deployments with Terraform infrastructure-as-code, hardened Kubernetes clusters, and automated CI/CD release gates engineered for zero-downtime delivery.',
     ctaLabel: 'Explore Cloud DevOps',
-    ctaHref: '/services.html#devops-cloud',
+    ctaHref: '/services/#devops-cloud',
     secondaryLabel: 'Review Sample Architectures',
-    secondaryHref: '/projects.html',
+    secondaryHref: '/projects/',
     image: SITE_IMAGES.heroSlides.cloudDevops,
     imageAlt: 'Multi-region Kubernetes and cloud DevOps topology diagram',
     highlightStat: '68%',
@@ -79,9 +79,9 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       'Retire technical debt safely. We refactor aging PHP 5 and PHP 7 codebases into modular Laravel and Symfony APIs with automated test coverage and clean database schemas.',
     ctaLabel: 'Explore PHP Modernization',
-    ctaHref: '/services.html#php-modernization',
+    ctaHref: '/services/#php-modernization',
     secondaryLabel: 'Speak With Architects',
-    secondaryHref: '/contact.html',
+    secondaryHref: '/contact-us/',
     image: SITE_IMAGES.heroSlides.phpModern,
     imageAlt: 'Legacy PHP monolith to modular microservices transformation diagram',
     highlightStat: '3.4x',

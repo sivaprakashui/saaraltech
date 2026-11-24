@@ -153,7 +153,7 @@ export const ContactPage: React.FC = () => {
 
                   <li>
                     <a
-                      href="/index.html"
+                      href="/"
                       className="group flex items-start gap-4 text-sm"
                     >
                       <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/10 text-[#60C3F7] group-hover:bg-[#3AA3DC] group-hover:text-white transition-colors">

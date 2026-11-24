@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           {/* Brand Column with all-white transparent SaaralTech logo */}
           <div className="lg:col-span-4 space-y-5">
             <a
-              href="/index.html"
+              href="/"
               className="block h-11 sm:h-12 aspect-[1208/228] max-w-full bg-contain bg-left bg-no-repeat focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded"
               style={{ backgroundImage: `url('${SITE_IMAGES.logoWhite}')` }}
               aria-label="SaaralTech Solutions"
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
               ))}
               <li>
                 <a
-                  href="/contact.html"
+                  href="/contact-us/"
                   className="text-white/90 hover:text-white hover:underline transition-colors inline-flex items-center gap-1"
                 >
                   Contact Us
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
               {SERVICES.map((service) => (
                 <li key={service.id}>
                   <a
-                    href={`/services.html#${service.id}`}
+                    href={`/services/#${service.id}`}
                     className="text-white/90 hover:text-white hover:underline transition-colors inline-flex items-center gap-1.5"
                   >
                     <span>{service.title}</span>
@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/index.html"
+                  href="/"
                   className="group flex items-center gap-3 text-white hover:text-white/80 transition-colors"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-white/15 text-white group-hover:bg-white group-hover:text-[#0d1b2a] transition-colors">
@@ -121,7 +121,7 @@ export const Footer: React.FC = () => {
 
             <div className="pt-2">
               <a
-                href="/contact.html"
+                href="/contact-us/"
                 className="inline-flex items-center gap-2 rounded-md border border-white/80 bg-white/10 px-4 py-2.5 text-xs font-semibold text-white hover:bg-white hover:text-[#0d1b2a] transition-colors whitespace-nowrap"
               >
                 <span>Start a Conversation</span>

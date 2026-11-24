@@ -87,13 +87,13 @@ const IndustryDetailBlock: React.FC<{ industry: IndustryItem }> = ({ industry })
 
       <div className="flex flex-wrap items-center justify-between gap-4 border-t border-[#eee] pt-6">
         <a
-          href="/projects.html"
+          href="/projects/"
           className="text-[14px] lg:text-[16px] font-semibold text-[#10b857] hover:text-[#17b7df] transition-colors"
         >
           See Sample Industry Blueprints
         </a>
         <a
-          href={`/contact.html?service=${encodeURIComponent(industry.title)}`}
+          href={`/contact-us/?service=${encodeURIComponent(industry.title)}`}
           className="inline-flex items-center gap-2 rounded-full border-2 border-[#10b857] px-6 py-2.5 text-[14px] md:text-[15px] lg:text-[16px] font-semibold text-[#10b857] hover:bg-gradient-to-r hover:from-[#10b857] hover:to-[#17b7df] hover:text-white hover:border-transparent transition-all duration-200 whitespace-nowrap shrink-0"
         >
           <span>Discuss Domain Architecture</span>

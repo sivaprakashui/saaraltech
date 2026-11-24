@@ -134,7 +134,7 @@ export const ServicesPage: React.FC = () => {
                       </div>
 
                       <a
-                        href={`/contact.html?service=${encodeURIComponent(service.title)}`}
+                        href={`/contact-us/?service=${encodeURIComponent(service.title)}`}
                         className="inline-flex items-center gap-2 rounded-md bg-[#1D354C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#3AA3DC] transition-colors whitespace-nowrap shrink-0"
                       >
                         <span>Request Consultation</span>

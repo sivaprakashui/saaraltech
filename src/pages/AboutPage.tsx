@@ -193,7 +193,7 @@ export const AboutPage: React.FC = () => {
               </p>
             </div>
             <a
-              href="/services.html"
+              href="/services/"
               className="inline-flex items-center gap-2 text-[15px] lg:text-[16px] font-semibold text-[#1DA05F] hover:text-[#17B7DF] transition-colors whitespace-nowrap shrink-0"
             >
               <span>Explore Technical Services</span>

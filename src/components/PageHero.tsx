@@ -34,7 +34,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
       />
       <div className="relative mx-auto max-w-7xl px-4 pt-28 pb-16 sm:px-6 sm:pt-32 sm:pb-20 lg:px-8 lg:pt-36 lg:pb-22">
         <nav aria-label="Breadcrumb" data-gsap="hero-stagger" className="mb-6 flex items-center gap-2 text-xs font-medium text-slate-200">
-          <a href="/index.html" className="hover:text-[#7CF5B4] transition-colors">
+          <a href="/" className="hover:text-[#7CF5B4] transition-colors">
             Home
           </a>
           <ChevronRight className="h-3.5 w-3.5 text-slate-300" aria-hidden="true" />

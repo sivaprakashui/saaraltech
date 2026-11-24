@@ -297,7 +297,7 @@ export const ProjectsPage: React.FC = () => {
                   Technologies: {activeProject.technologies.join(' · ')}
                 </p>
                 <a
-                  href={`/contact.html?service=${encodeURIComponent(activeProject.category)}`}
+                  href={`/contact-us/?service=${encodeURIComponent(activeProject.category)}`}
                   className="inline-flex items-center gap-2 rounded-full border-2 border-[#10b857] bg-[#10b857] px-6 py-2.5 text-[15px] font-semibold text-white hover:bg-[#0D9647] hover:border-[#0D9647] transition-colors whitespace-nowrap"
                 >
                   <span>Request Similar Scope</span>

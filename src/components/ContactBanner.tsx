@@ -67,7 +67,7 @@ export const ContactBanner: React.FC<ContactBannerProps> = ({
                 </div>
 
                 <a
-                  href="/contact.html"
+                  href="/contact-us/"
                   className="inline-flex w-full items-center justify-center gap-2.5 rounded-md bg-[#10B857] px-6 py-3.5 text-sm font-semibold text-white hover:bg-[#0D9647] transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B857]"
                 >
                   <span>{primaryLabel}</span>
@@ -122,7 +122,7 @@ export const ContactBanner: React.FC<ContactBannerProps> = ({
               </div>
 
               <a
-                href="/contact.html"
+                href="/contact-us/"
                 className="inline-flex w-full items-center justify-center gap-2.5 rounded-md border border-black bg-black px-6 py-3.5 text-sm font-semibold text-white hover:bg-black/85 transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
               >
                 <span>{primaryLabel}</span>
