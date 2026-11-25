@@ -10,7 +10,7 @@ export const COMPANY_INFO = {
   name: 'SaaralTech Solutions',
   shortName: 'SaaralTech',
   website: 'www.saaraltech.com',
-  websiteUrl: 'https://www.saaraltech.com',
+  websiteUrl: 'https://saaraltech.vercel.app/',
   email: 'Operations@saaraltech.com',
   mobile: '+44 7404249392',
   mobileHref: 'tel:+447404249392',

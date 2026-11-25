@@ -98,7 +98,9 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href={COMPANY_INFO.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center gap-3 text-white hover:text-white/80 transition-colors"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-white/15 text-white group-hover:bg-white group-hover:text-[#0d1b2a] transition-colors">
