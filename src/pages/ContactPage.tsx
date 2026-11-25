@@ -104,14 +104,14 @@ export const ContactPage: React.FC = () => {
             {/* Left Column: Direct Contact Details (No Google Map / No Address) */}
             <aside data-gsap="reveal" className="lg:col-span-5 space-y-8">
               <div className="rounded-2xl bg-[#1D354C] p-8 text-white space-y-6">
-                <div className="space-y-2">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#60C3F7]">
+                <div className="space-y-2 font-sans">
+                  <p className="text-[14px] md:text-[15px] font-normal uppercase tracking-wide text-[#60C3F7]">
                     Direct Channels
                   </p>
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-white leading-[1.35]">
                     SaaralTech Operations Desk
                   </h2>
-                  <p className="text-sm leading-relaxed text-slate-300">
+                  <p className="text-[15px] md:text-[16px] font-normal leading-[1.6] text-slate-300">
                     Connect with us for architecture reviews, PHP migration assessments, BI engineering, or cloud infrastructure support.
                   </p>
                 </div>
@@ -172,11 +172,11 @@ export const ContactPage: React.FC = () => {
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-8 space-y-4">
-                <h3 className="text-lg font-bold text-[#1D354C]">
+              <div className="rounded-2xl border border-slate-200 bg-white p-8 space-y-4 font-sans">
+                <h3 className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold text-black leading-[1.35]">
                   What to Include in Your Inquiry
                 </h3>
-                <ul className="space-y-3 text-sm text-slate-600">
+                <ul className="space-y-3 text-[15px] md:text-[16px] font-normal leading-[1.6] text-[#333333]">
                   {[
                     'Target service focus (AI & Data, BI, PHP Migration, or Cloud DevOps)',
                     'Current technology stack or legacy version constraints',
@@ -184,7 +184,7 @@ export const ContactPage: React.FC = () => {
                     'Preferred contact window for an initial scoping call',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#3AA3DC]" aria-hidden="true" />
+                      <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#1DA05F]" aria-hidden="true" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -193,13 +193,13 @@ export const ContactPage: React.FC = () => {
             </aside>
 
             {/* Right Column: Validated Contact Form */}
-            <div data-gsap="reveal" className="lg:col-span-7">
+            <div data-gsap="reveal" className="lg:col-span-7 font-sans">
               <div className="rounded-2xl border border-slate-200 bg-white p-7 sm:p-10">
                 <div className="mb-8 space-y-2 border-b border-slate-100 pb-6">
-                  <h2 className="text-2xl font-bold text-[#1D354C]">
+                  <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-black leading-[1.35]">
                     Send Us a Message
                   </h2>
-                  <p className="text-sm text-slate-600">
+                  <p className="text-[15px] md:text-[16px] font-normal leading-[1.6] text-[#333333]">
                     Complete the form below and our operations team will review your requirements within one business day.
                   </p>
                 </div>

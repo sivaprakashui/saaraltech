@@ -34,14 +34,14 @@ export const ContactBanner: React.FC<ContactBannerProps> = ({
             data-gsap="reveal"
             className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12"
           >
-            <div className="lg:col-span-7 space-y-4 text-white">
-              <p className="text-sm font-semibold tracking-wide text-[#89FAEC]">
+            <div className="lg:col-span-7 space-y-4 text-white font-sans">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-[#89FAEC]">
                 Work With SaaralTech Solutions
               </p>
-              <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl leading-tight">
+              <h2 className="text-[28px] sm:text-[34px] lg:text-[44px] font-semibold tracking-tight text-white leading-[1.25]">
                 {title}
               </h2>
-              <p className="max-w-2xl text-base leading-relaxed text-slate-100">
+              <p className="max-w-2xl text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-slate-100">
                 {description}
               </p>
             </div>
@@ -89,14 +89,14 @@ export const ContactBanner: React.FC<ContactBannerProps> = ({
           className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12 bg-transparent"
         >
           {/* Left narrative column with black typography */}
-          <div className="lg:col-span-7 space-y-4 text-black">
-            <p className="text-sm font-semibold tracking-wide text-black">
+          <div className="lg:col-span-7 space-y-4 text-black font-sans">
+            <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-black">
               Work With SaaralTech Solutions
             </p>
-            <h2 className="text-2xl font-bold tracking-tight text-black sm:text-3xl lg:text-4xl leading-tight">
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[44px] font-semibold tracking-tight text-black leading-[1.25]">
               {title}
             </h2>
-            <p className="max-w-2xl text-base leading-relaxed text-black/85">
+            <p className="max-w-2xl text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-black/85">
               {description}
             </p>
           </div>

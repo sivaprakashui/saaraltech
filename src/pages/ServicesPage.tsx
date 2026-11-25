@@ -81,34 +81,34 @@ export const ServicesPage: React.FC = () => {
                     }`}
                   >
                     <div className="space-y-5">
-                      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
-                        <span className="font-mono text-sm font-bold text-[#1D7CB3] tabular-nums">
+                      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4 font-sans">
+                        <span className="text-[15px] md:text-[16px] font-semibold text-[#1D7CB3]">
                           {service.index} Service Practice
                         </span>
-                        <span className="text-xs font-medium text-slate-500">
+                        <span className="text-[14px] font-medium text-[#666666]">
                           {service.stack.join(' · ')}
                         </span>
                       </div>
 
-                      <h2 className="text-2xl font-bold tracking-tight text-[#1D354C] sm:text-3xl">
+                      <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold tracking-tight text-black leading-[1.35]">
                         {service.title}
                       </h2>
-                      <p className="text-base leading-relaxed text-slate-600">
+                      <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
                         {service.description}
                       </p>
 
                       <div className="space-y-3 pt-2">
-                        <h3 className="text-sm font-semibold text-[#1D354C]">
+                        <h3 className="text-[15px] lg:text-[16px] font-semibold text-black">
                           Key Engineering Deliverables
                         </h3>
                         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                           {service.deliverables.map((item) => (
                             <li
                               key={item}
-                              className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700"
+                              className="flex items-start gap-2.5 text-[15px] md:text-[16px] font-normal leading-[1.6] text-[#333333]"
                             >
                               <CheckCircle2
-                                className="mt-0.5 h-4 w-4 shrink-0 text-[#3AA3DC]"
+                                className="mt-1 h-4 w-4 shrink-0 text-[#1DA05F]"
                                 aria-hidden="true"
                               />
                               <span>{item}</span>
@@ -123,10 +123,10 @@ export const ServicesPage: React.FC = () => {
                       <div className="grid grid-cols-2 gap-6">
                         {service.outcomes.map((outcome) => (
                           <div key={outcome.label}>
-                            <p className="text-xl font-bold text-[#1D354C] tabular-nums">
+                            <p className="text-[20px] lg:text-[24px] font-semibold text-black tabular-nums">
                               {outcome.value}
                             </p>
-                            <p className="mt-0.5 text-xs text-slate-500 max-w-[180px]">
+                            <p className="mt-0.5 text-[14px] text-[#333333] max-w-[180px]">
                               {outcome.label}
                             </p>
                           </div>
@@ -135,7 +135,7 @@ export const ServicesPage: React.FC = () => {
 
                       <a
                         href={`/contact-us/?service=${encodeURIComponent(service.title)}`}
-                        className="inline-flex items-center gap-2 rounded-md bg-[#1D354C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#3AA3DC] transition-colors whitespace-nowrap shrink-0"
+                        className="inline-flex items-center gap-2 rounded-md bg-[#1D354C] px-5 py-3 text-[15px] font-semibold text-white hover:bg-[#10B857] transition-colors whitespace-nowrap shrink-0"
                       >
                         <span>Request Consultation</span>
                         <ArrowRight className="h-4 w-4" aria-hidden="true" />

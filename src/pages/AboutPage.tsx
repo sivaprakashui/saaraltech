@@ -69,18 +69,20 @@ export const AboutPage: React.FC = () => {
       />
 
       {/* Company Overview */}
-      <section className="bg-white border-b border-slate-200">
+      <section className="bg-white border-b border-slate-200 font-sans">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+          <div className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-12">
             <div data-gsap="reveal" className="lg:col-span-6 space-y-6">
-              <p className="text-sm font-semibold text-[#1D7CB3]">Company Overview</p>
-              <h2 className="text-3xl font-bold tracking-tight text-[#1D354C] sm:text-4xl leading-tight">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-[#1D7CB3]">
+                Company Overview
+              </p>
+              <h2 className="text-[30px] sm:text-[34px] md:text-[40px] lg:text-[54px] font-semibold tracking-tight text-black leading-[1.25] lg:leading-[1.18]">
                 Built Around Four Interconnected Disciplines: Cloud, Testing, Dev, and Placement
               </h2>
-              <p className="text-base leading-relaxed text-slate-600">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
                 Modern enterprises rarely struggle from a lack of software tools—they struggle when legacy applications, fragmented data warehouses, and manual deployment processes slow critical business decisions.
               </p>
-              <p className="text-base leading-relaxed text-slate-600">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
                 SaaralTech Solutions bridges that operational gap. We design high-integrity AI and data pipelines, turn raw records into governed Business Intelligence, modernize mission-critical PHP estates without business interruption, and automate multi-cloud DevOps workflows.
               </p>
 
@@ -91,16 +93,16 @@ export const AboutPage: React.FC = () => {
                   'Legacy PHP 8.3+ Modernization',
                   'Cloud DevOps & Technical Placement',
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-2.5 text-sm font-medium text-[#1D354C]">
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-[#3AA3DC]" aria-hidden="true" />
+                  <div key={item} className="flex items-center gap-2.5 text-[15px] md:text-[16px] lg:text-[18px] font-normal text-[#333333]">
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-[#1DA05F]" aria-hidden="true" />
                     <span>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div data-gsap="image-reveal" className="lg:col-span-6">
-              <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-100 aspect-[4/3]">
+            <div data-gsap="image-reveal" className="lg:col-span-6 lg:relative">
+              <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-100 aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0">
                 <SmartImage
                   src={SITE_IMAGES.about.overview}
                   alt="SaaralTech Solutions systems architecture overview"
@@ -114,31 +116,38 @@ export const AboutPage: React.FC = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-[#F8FAFC] border-b border-slate-200">
+      <section
+        className="border-b border-slate-200 bg-[#F8FAFC] bg-cover bg-center font-sans"
+        style={{ backgroundImage: `url('${SITE_IMAGES.aboutMissionBg}')` }}
+      >
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div data-gsap="stagger-group" className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <article
               data-gsap-item
-              className="rounded-xl border border-slate-200 bg-white p-8 sm:p-10 space-y-4"
+              className="rounded-[16px] border-[2.36px] border-[#E0EBE3] bg-white/95 backdrop-blur-xs shadow-sm px-[30px] py-[27px] space-y-3"
             >
-              <p className="text-xs font-semibold tracking-wide text-[#1D7CB3]">Our Mission</p>
-              <h2 className="text-2xl font-bold text-[#1D354C]">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-[#1D7CB3]">
+                Our Mission
+              </p>
+              <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold leading-[1.35] lg:leading-[1.5] text-black">
                 Eliminate Technical Fragility From Core Operations
               </h2>
-              <p className="text-base leading-relaxed text-slate-600">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
                 To engineer reliable data pipelines, modernized software platforms, and automated cloud infrastructure that allow organizations in logistics, insurance, retail, and financial services to operate with clarity and speed.
               </p>
             </article>
 
             <article
               data-gsap-item
-              className="rounded-xl border border-slate-200 bg-white p-8 sm:p-10 space-y-4"
+              className="rounded-[16px] border-[2.36px] border-[#E0EBE3] bg-white/95 backdrop-blur-xs shadow-sm px-[30px] py-[27px] space-y-3"
             >
-              <p className="text-xs font-semibold tracking-wide text-[#1D7CB3]">Our Vision</p>
-              <h2 className="text-2xl font-bold text-[#1D354C]">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-[#1D7CB3]">
+                Our Vision
+              </p>
+              <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold leading-[1.35] lg:leading-[1.5] text-black">
                 The Trusted Long-Term Engineering Partner for Regulated Growth
               </h2>
-              <p className="text-base leading-relaxed text-slate-600">
+              <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
                 To be recognized for engineering craftsmanship that stands the test of scale—where every modernized codebase, AI workflow, and cloud deployment remains auditable, cost-efficient, and adaptable for years ahead.
               </p>
             </article>
@@ -147,11 +156,13 @@ export const AboutPage: React.FC = () => {
       </section>
 
       {/* Core Values */}
-      <section className="bg-white border-b border-slate-200">
+      <section className="bg-white border-b border-slate-200 font-sans">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-          <div data-gsap="reveal" className="max-w-2xl space-y-3 mb-12">
-            <p className="text-sm font-semibold text-[#1D7CB3]">Operating Principles</p>
-            <h2 className="text-3xl font-bold tracking-tight text-[#1D354C] sm:text-4xl">
+          <div data-gsap="reveal" className="max-w-3xl space-y-3 mb-12">
+            <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-[#333333]">
+              Operating Principles
+            </p>
+            <h2 className="text-[30px] sm:text-[34px] md:text-[40px] lg:text-[54px] font-semibold tracking-tight text-black leading-[1.35] lg:leading-[1.2]">
               Values That Govern Every Deliverable
             </h2>
           </div>
@@ -163,13 +174,17 @@ export const AboutPage: React.FC = () => {
                 <article
                   key={value.title}
                   data-gsap-item
-                  className="rounded-xl border border-slate-200 bg-[#F8FAFC] p-6 space-y-4"
+                  className="rounded-[16px] border-[2.36px] border-[#E0EBE3] bg-[#F8FAFC] p-6 space-y-4"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#1D354C] text-[#60C3F7]">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#1D354C]">{value.title}</h3>
-                  <p className="text-sm leading-relaxed text-slate-600">{value.description}</p>
+                  <h3 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold leading-[1.35] lg:leading-[1.4] text-black">
+                    {value.title}
+                  </h3>
+                  <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
+                    {value.description}
+                  </p>
                 </article>
               );
             })}
@@ -177,8 +192,11 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Delivery Approach (How We Deliver - white background, 2-col layout & Poppins typography matching reference) */}
-      <section className="bg-white font-sans">
+      {/* Delivery Approach (How We Deliver - shared gradient background, 2-col layout & Poppins typography) */}
+      <section
+        className="bg-[#F8FAFC] bg-cover bg-center font-sans"
+        style={{ backgroundImage: `url('${SITE_IMAGES.aboutMissionBg}')` }}
+      >
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
           <div data-gsap="reveal" className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-3xl">
@@ -209,7 +227,7 @@ export const AboutPage: React.FC = () => {
               <div
                 key={stage.title}
                 data-gsap-item
-                className="rounded-[16px] border-[2.36px] border-[#E0EBE3] bg-white px-[30px] py-[27px]"
+                className="rounded-[16px] border-[2.36px] border-[#E0EBE3] bg-white/95 backdrop-blur-xs shadow-sm px-[30px] py-[27px]"
               >
                 <div className="flex h-full flex-col justify-start">
                   <h3 className="mb-2 text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold leading-[1.35] lg:leading-[1.5] text-black">
@@ -228,7 +246,6 @@ export const AboutPage: React.FC = () => {
       <ContactBanner
         title="Discuss Your Technical Roadmap With SaaralTech Solutions"
         description="Whether you need an architectural audit, a zero-downtime PHP upgrade, or cloud engineering capacity, our operations desk responds within one business day."
-        backgroundImage={SITE_IMAGES.industriesSectionBg}
       />
     </Layout>
   );

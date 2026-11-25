@@ -1,7 +1,6 @@
 import heroAiData from './hero-ai-data.svg';
 import heroCloudDevops from './hero-cloud-devops.svg';
 import heroPhpModern from './hero-php-modern.svg';
-import aboutOverview from './about-overview.svg';
 import serviceBiAnalytics from './service-bi-analytics.svg';
 import industrySupplyChain from './industry-supply-chain.svg';
 import industryInsurance from './industry-insurance.svg';
@@ -30,13 +29,14 @@ export const SITE_IMAGES = {
   industriesHeroBg: '/assets/aistudio/industries_logo_8994ed2a.jpg',
   industriesSectionBg: '/assets/aistudio/testonial-bg_0b0c3dc3.png',
   aboutHeroBg: '/assets/aistudio/image_7e854ad1_9de6c98f.jpg',
+  aboutMissionBg: '/assets/aistudio/About-Us_5ea5f5c4.jpg',
   heroSlides: {
     aiData: heroAiData,
     cloudDevops: heroCloudDevops,
     phpModern: heroPhpModern,
   },
   about: {
-    overview: aboutOverview,
+    overview: '/assets/aistudio/steve-a-johnson-ZPOoDQc8yMw-unsplash_3b7267e4.jpg',
   },
   services: {
     aiEngineering: heroAiData,
