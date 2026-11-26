@@ -51,34 +51,36 @@ const CaseStudyWrapper: React.FC<{ caseStudies: ServiceCaseStudy[] }> = ({
             </button>
 
             {isOpen && (
-              <div className="border-t border-[#E5EDE7] bg-white px-5 py-5 sm:px-7 sm:py-6 space-y-4">
-                <div>
-                  <span className="block text-[11px] font-bold uppercase tracking-[0.8px] text-[#666666] mb-1.5">
-                    The problem
-                  </span>
-                  <p className="text-[14px] font-normal leading-[1.65] text-[#555555]">
-                    {study.problem}
-                  </p>
-                </div>
+              <div className="border-t border-[#E5EDE7] bg-white px-5 py-5 sm:px-7 sm:py-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                  <div>
+                    <span className="block text-[11px] font-bold uppercase tracking-[0.8px] text-[#666666] mb-1.5">
+                      The problem
+                    </span>
+                    <p className="text-[14px] font-normal leading-[1.65] text-[#555555]">
+                      {study.problem}
+                    </p>
+                  </div>
 
-                <div>
-                  <span className="block text-[11px] font-bold uppercase tracking-[0.8px] text-[#666666] mb-1.5">
-                    What we built
-                  </span>
-                  <ul className="list-disc pl-4 space-y-1 text-[14px] font-normal leading-[1.65] text-[#555555]">
-                    {study.built.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
+                  <div>
+                    <span className="block text-[11px] font-bold uppercase tracking-[0.8px] text-[#666666] mb-1.5">
+                      What we built
+                    </span>
+                    <ul className="list-disc pl-4 space-y-1 text-[14px] font-normal leading-[1.65] text-[#555555]">
+                      {study.built.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
 
-                <div className="pt-1 border-t border-[#E5EDE7]">
-                  <span className="block text-[11px] font-bold uppercase tracking-[0.8px] text-[#15251D] mb-1.5">
-                    Result
-                  </span>
-                  <p className="text-[14px] font-semibold leading-[1.65] text-[#15251D]">
-                    {study.result}
-                  </p>
+                  <div>
+                    <span className="block text-[11px] font-bold uppercase tracking-[0.8px] text-[#15251D] mb-1.5">
+                      Result
+                    </span>
+                    <p className="text-[14px] font-semibold leading-[1.65] text-[#15251D]">
+                      {study.result}
+                    </p>
+                  </div>
                 </div>
               </div>
             )}
@@ -153,8 +155,7 @@ export const ServicesPage: React.FC = () => {
       {/* Dedicated Service Sections */}
       <section ref={showcaseRef} className="bg-[#F8FAFC] font-sans">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 space-y-12">
-          {visibleServices.map((service, index) => {
-            const isReversed = index % 2 === 1;
+          {visibleServices.map((service) => {
             const badgeColor = SERVICE_BADGE_COLORS[service.id] ?? 'rgb(27, 164, 198)';
             return (
               <article
@@ -163,13 +164,9 @@ export const ServicesPage: React.FC = () => {
                 data-gsap="reveal"
                 className="scroll-mt-24 overflow-hidden rounded-2xl border border-[#e6e6e6] bg-white shadow-sm"
               >
-                <div className="grid grid-cols-1 items-stretch lg:grid-cols-12">
-                  {/* Text & Specification Column */}
-                  <div
-                    className={`p-7 sm:p-10 lg:p-11 lg:col-span-6 flex flex-col justify-between space-y-8 ${
-                      isReversed ? 'lg:order-2' : 'lg:order-1'
-                    }`}
-                  >
+                <div className="flex flex-col">
+                  {/* Text & Specification Section */}
+                  <div className="p-7 sm:p-10 lg:p-12 flex flex-col justify-between space-y-8">
                     <div className="space-y-5">
                       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#eee] pb-4">
                         <div
@@ -225,7 +222,7 @@ export const ServicesPage: React.FC = () => {
                             <p className="text-[20px] lg:text-[24px] font-semibold text-black tabular-nums">
                               {outcome.value}
                             </p>
-                            <p className="mt-0.5 text-[14px] text-[#333333] max-w-[180px]">
+                            <p className="mt-0.5 text-[14px] text-[#333333] max-w-[200px]">
                               {outcome.label}
                             </p>
                           </div>
@@ -242,13 +239,9 @@ export const ServicesPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Case Study Wrapper Column (replaces visual image) */}
+                  {/* Case Study Wrapper Bottom Section */}
                   <div
-                    className={`bg-[#F8FAFC] bg-cover bg-center border-t border-[#E5EDE7] lg:border-t-0 ${
-                      isReversed
-                        ? 'lg:order-1 lg:border-r'
-                        : 'lg:order-2 lg:border-l'
-                    } lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-center`}
+                    className="bg-[#F8FAFC] bg-cover bg-center border-t border-[#E5EDE7] p-6 sm:p-8 lg:p-10"
                     style={{ backgroundImage: `url('${SITE_IMAGES.aboutMissionBg}')` }}
                   >
                     <CaseStudyWrapper caseStudies={service.caseStudies} />
