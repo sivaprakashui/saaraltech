@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CheckCircle2, Globe, Mail, Phone, Send } from 'lucide-react';
 import { Layout } from '@/src/components/Layout';
 import { PageHero } from '@/src/components/PageHero';
+import { SITE_IMAGES } from '@/src/assets/images';
 import { COMPANY_INFO, SERVICES } from '@/src/data/siteData';
 
 interface FormState {
@@ -96,38 +97,48 @@ export const ContactPage: React.FC = () => {
         breadcrumbCurrent="Contact Us"
         title="Start an Engineering Conversation With SaaralTech Solutions"
         description="Reach our operations desk directly by email or phone, or submit your project requirements below for a focused technical consultation."
+        backgroundImage={SITE_IMAGES.contactHeroBg}
+        overlayClassName=""
+        overlayStyle={{
+          backgroundColor: 'rgb(51 51 51 / 0.5)',
+          backgroundImage:
+            'linear-gradient(-259deg, rgb(16 184 87 / 0.4) 0%, rgb(16 184 87 / 0.4) 1%, rgb(23 183 223 / 0.4) 100%)',
+        }}
       />
 
-      <section className="bg-[#F8FAFC]">
+      <section className="bg-[#F8FAFC] font-sans">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-stretch lg:gap-12">
             {/* Left Column: Direct Contact Details (No Google Map / No Address) */}
             <aside data-gsap="reveal" className="lg:col-span-5 space-y-8">
-              <div className="rounded-2xl bg-[#1D354C] p-8 text-white space-y-6">
+              <div
+                className="rounded-2xl p-8 text-white space-y-6 shadow-sm"
+                style={{ background: 'linear-gradient(45deg, #10b857, #17b7df)' }}
+              >
                 <div className="space-y-2 font-sans">
-                  <p className="text-[14px] md:text-[15px] font-normal uppercase tracking-wide text-[#60C3F7]">
+                  <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal uppercase tracking-wide text-white/95">
                     Direct Channels
                   </p>
-                  <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-white leading-[1.35]">
+                  <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-white leading-[1.35] lg:leading-[1.4]">
                     SaaralTech Operations Desk
                   </h2>
-                  <p className="text-[15px] md:text-[16px] font-normal leading-[1.6] text-slate-300">
+                  <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-white/95">
                     Connect with us for architecture reviews, PHP migration assessments, BI engineering, or cloud infrastructure support.
                   </p>
                 </div>
 
-                <ul className="space-y-5 border-t border-white/10 pt-6">
+                <ul className="space-y-5 border-t border-white/25 pt-6">
                   <li>
                     <a
                       href={`mailto:${COMPANY_INFO.email}`}
-                      className="group flex items-start gap-4 text-sm"
+                      className="group flex items-start gap-4"
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/10 text-[#60C3F7] group-hover:bg-[#3AA3DC] group-hover:text-white transition-colors">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/20 text-white group-hover:bg-white group-hover:text-[#0B2536] transition-colors">
                         <Mail className="h-5 w-5" aria-hidden="true" />
                       </span>
                       <div>
-                        <p className="text-xs text-slate-400">Email</p>
-                        <p className="font-semibold text-white group-hover:text-[#60C3F7] transition-colors break-all">
+                        <p className="text-[13px] md:text-[14px] text-white/85">Email</p>
+                        <p className="text-[15px] md:text-[16px] font-semibold text-white group-hover:underline transition-colors break-all">
                           {COMPANY_INFO.email}
                         </p>
                       </div>
@@ -137,14 +148,14 @@ export const ContactPage: React.FC = () => {
                   <li>
                     <a
                       href={COMPANY_INFO.mobileHref}
-                      className="group flex items-start gap-4 text-sm"
+                      className="group flex items-start gap-4"
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/10 text-[#60C3F7] group-hover:bg-[#3AA3DC] group-hover:text-white transition-colors">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/20 text-white group-hover:bg-white group-hover:text-[#0B2536] transition-colors">
                         <Phone className="h-5 w-5" aria-hidden="true" />
                       </span>
                       <div>
-                        <p className="text-xs text-slate-400">Mobile</p>
-                        <p className="font-semibold text-white group-hover:text-[#60C3F7] transition-colors tabular-nums">
+                        <p className="text-[13px] md:text-[14px] text-white/85">Mobile</p>
+                        <p className="text-[15px] md:text-[16px] font-semibold text-white group-hover:underline transition-colors tabular-nums">
                           {COMPANY_INFO.mobile}
                         </p>
                       </div>
@@ -156,14 +167,14 @@ export const ContactPage: React.FC = () => {
                       href={COMPANY_INFO.websiteUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-start gap-4 text-sm"
+                      className="group flex items-start gap-4"
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/10 text-[#60C3F7] group-hover:bg-[#3AA3DC] group-hover:text-white transition-colors">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/20 text-white group-hover:bg-white group-hover:text-[#0B2536] transition-colors">
                         <Globe className="h-5 w-5" aria-hidden="true" />
                       </span>
                       <div>
-                        <p className="text-xs text-slate-400">Website</p>
-                        <p className="font-semibold text-white group-hover:text-[#60C3F7] transition-colors">
+                        <p className="text-[13px] md:text-[14px] text-white/85">Website</p>
+                        <p className="text-[15px] md:text-[16px] font-semibold text-white group-hover:underline transition-colors">
                           {COMPANY_INFO.website}
                         </p>
                       </div>
@@ -173,10 +184,10 @@ export const ContactPage: React.FC = () => {
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-8 space-y-4 font-sans">
-                <h3 className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold text-black leading-[1.35]">
+                <h3 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-black leading-[1.35] lg:leading-[1.4]">
                   What to Include in Your Inquiry
                 </h3>
-                <ul className="space-y-3 text-[15px] md:text-[16px] font-normal leading-[1.6] text-[#333333]">
+                <ul className="space-y-3 text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#333333]">
                   {[
                     'Target service focus (AI & Data, BI, PHP Migration, or Cloud DevOps)',
                     'Current technology stack or legacy version constraints',
@@ -193,13 +204,16 @@ export const ContactPage: React.FC = () => {
             </aside>
 
             {/* Right Column: Validated Contact Form */}
-            <div data-gsap="reveal" className="lg:col-span-7 font-sans">
-              <div className="rounded-2xl border border-slate-200 bg-white p-7 sm:p-10">
-                <div className="mb-8 space-y-2 border-b border-slate-100 pb-6">
-                  <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-black leading-[1.35]">
+            <div data-gsap="reveal" className="lg:col-span-7 font-sans lg:flex lg:flex-col">
+              <div
+                className="rounded-2xl p-7 sm:p-10 shadow-sm text-white lg:flex-1 lg:flex lg:flex-col"
+                style={{ background: 'linear-gradient(45deg, #10b857, #17b7df)' }}
+              >
+                <div className="mb-8 space-y-2 border-b border-white/25 pb-6">
+                  <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] font-semibold text-white leading-[1.35] lg:leading-[1.4]">
                     Send Us a Message
                   </h2>
-                  <p className="text-[15px] md:text-[16px] font-normal leading-[1.6] text-[#333333]">
+                  <p className="text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-white/95">
                     Complete the form below and our operations team will review your requirements within one business day.
                   </p>
                 </div>
@@ -207,15 +221,15 @@ export const ContactPage: React.FC = () => {
                 {submittedRecord && (
                   <div
                     role="status"
-                    className="mb-8 rounded-xl border border-emerald-200 bg-emerald-50 p-6 space-y-3"
+                    className="mb-8 rounded-xl border border-white/40 bg-white p-6 space-y-3 text-slate-900 shadow-sm"
                   >
                     <div className="flex items-start gap-3">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" />
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#10b857]" aria-hidden="true" />
                       <div className="space-y-1">
-                        <h3 className="text-base font-bold text-emerald-950">
+                        <h3 className="text-base font-bold text-[#0B2536]">
                           Inquiry Prepared Successfully
                         </h3>
-                        <p className="text-sm text-emerald-900">
+                        <p className="text-sm text-[#333333]">
                           Thank you, {submittedRecord.name}. Your inquiry regarding{' '}
                           <span className="font-semibold">{submittedRecord.subject}</span> has been recorded.
                         </p>
@@ -224,7 +238,7 @@ export const ContactPage: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-4 pt-1 pl-8">
                       <a
                         href={buildMailtoHref(submittedRecord)}
-                        className="inline-flex items-center gap-2 rounded-md bg-[#1D354C] px-4 py-2 text-xs font-semibold text-white hover:bg-[#3AA3DC] transition-colors"
+                        className="inline-flex items-center gap-2 rounded-full border-2 border-[#10b857] px-5 py-2 text-xs font-semibold text-[#10b857] hover:bg-gradient-to-r hover:from-[#10b857] hover:to-[#17b7df] hover:text-white hover:border-transparent transition-all duration-200"
                       >
                         <Mail className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>Open in Email Client ({COMPANY_INFO.email})</span>
@@ -232,7 +246,7 @@ export const ContactPage: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => setSubmittedRecord(null)}
-                        className="text-xs font-semibold text-emerald-900 underline hover:no-underline"
+                        className="text-xs font-semibold text-[#0B2536] underline hover:no-underline cursor-pointer"
                       >
                         Send another inquiry
                       </button>
@@ -240,11 +254,11 @@ export const ContactPage: React.FC = () => {
                   </div>
                 )}
 
-                <form onSubmit={handleSubmit} noValidate className="space-y-6">
+                <form onSubmit={handleSubmit} noValidate className="space-y-6 lg:flex-1 lg:flex lg:flex-col">
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="contact-name" className="block text-sm font-semibold text-[#1D354C] mb-2">
-                        Name <span className="text-rose-600">*</span>
+                      <label htmlFor="contact-name" className="block text-sm font-semibold text-white mb-2">
+                        Name <span className="text-white">*</span>
                       </label>
                       <input
                         id="contact-name"
@@ -258,20 +272,22 @@ export const ContactPage: React.FC = () => {
                         }}
                         placeholder="Your full name"
                         aria-invalid={Boolean(errors.name)}
-                        className={`w-full rounded-md border px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
+                        className={`w-full rounded-md border bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
                           errors.name
                             ? 'border-rose-500 focus:ring-rose-200'
-                            : 'border-slate-300 focus:border-[#3AA3DC] focus:ring-[#3AA3DC]/25'
+                            : 'border-white/60 focus:border-white focus:ring-white/40'
                         }`}
                       />
                       {errors.name && (
-                        <p className="mt-1.5 text-xs font-medium text-rose-600">{errors.name}</p>
+                        <p className="mt-1.5 inline-block rounded bg-white/95 px-2 py-0.5 text-xs font-semibold text-rose-700">
+                          {errors.name}
+                        </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="contact-email" className="block text-sm font-semibold text-[#1D354C] mb-2">
-                        Email <span className="text-rose-600">*</span>
+                      <label htmlFor="contact-email" className="block text-sm font-semibold text-white mb-2">
+                        Email <span className="text-white">*</span>
                       </label>
                       <input
                         id="contact-email"
@@ -285,22 +301,24 @@ export const ContactPage: React.FC = () => {
                         }}
                         placeholder="you@company.com"
                         aria-invalid={Boolean(errors.email)}
-                        className={`w-full rounded-md border px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
+                        className={`w-full rounded-md border bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
                           errors.email
                             ? 'border-rose-500 focus:ring-rose-200'
-                            : 'border-slate-300 focus:border-[#3AA3DC] focus:ring-[#3AA3DC]/25'
+                            : 'border-white/60 focus:border-white focus:ring-white/40'
                         }`}
                       />
                       {errors.email && (
-                        <p className="mt-1.5 text-xs font-medium text-rose-600">{errors.email}</p>
+                        <p className="mt-1.5 inline-block rounded bg-white/95 px-2 py-0.5 text-xs font-semibold text-rose-700">
+                          {errors.email}
+                        </p>
                       )}
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="contact-subject" className="block text-sm font-semibold text-[#1D354C] mb-2">
-                        Subject <span className="text-rose-600">*</span>
+                      <label htmlFor="contact-subject" className="block text-sm font-semibold text-white mb-2">
+                        Subject <span className="text-white">*</span>
                       </label>
                       <input
                         id="contact-subject"
@@ -314,19 +332,21 @@ export const ContactPage: React.FC = () => {
                         }}
                         placeholder="e.g. PHP 8.3 Migration Assessment"
                         aria-invalid={Boolean(errors.subject)}
-                        className={`w-full rounded-md border px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
+                        className={`w-full rounded-md border bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
                           errors.subject
                             ? 'border-rose-500 focus:ring-rose-200'
-                            : 'border-slate-300 focus:border-[#3AA3DC] focus:ring-[#3AA3DC]/25'
+                            : 'border-white/60 focus:border-white focus:ring-white/40'
                         }`}
                       />
                       {errors.subject && (
-                        <p className="mt-1.5 text-xs font-medium text-rose-600">{errors.subject}</p>
+                        <p className="mt-1.5 inline-block rounded bg-white/95 px-2 py-0.5 text-xs font-semibold text-rose-700">
+                          {errors.subject}
+                        </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="contact-service" className="block text-sm font-semibold text-[#1D354C] mb-2">
+                      <label htmlFor="contact-service" className="block text-sm font-semibold text-white mb-2">
                         Service Focus
                       </label>
                       <select
@@ -336,7 +356,7 @@ export const ContactPage: React.FC = () => {
                         onChange={(e) =>
                           setFormData((prev) => ({ ...prev, service: e.target.value }))
                         }
-                        className="w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-[#3AA3DC] focus:outline-none focus:ring-2 focus:ring-[#3AA3DC]/25"
+                        className="w-full rounded-md border border-white/60 bg-white px-4 py-3 text-sm text-slate-900 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/40"
                       >
                         {SERVICES.map((service) => (
                           <option key={service.id} value={service.title}>
@@ -351,9 +371,9 @@ export const ContactPage: React.FC = () => {
                     </div>
                   </div>
 
-                  <div>
-                    <label htmlFor="contact-message" className="block text-sm font-semibold text-[#1D354C] mb-2">
-                      Message <span className="text-rose-600">*</span>
+                  <div className="lg:flex-1 lg:flex lg:flex-col">
+                    <label htmlFor="contact-message" className="block text-sm font-semibold text-white mb-2">
+                      Message <span className="text-white">*</span>
                     </label>
                     <textarea
                       id="contact-message"
@@ -367,23 +387,25 @@ export const ContactPage: React.FC = () => {
                       }}
                       placeholder="Describe your current system, engineering goals, and expected timeline..."
                       aria-invalid={Boolean(errors.message)}
-                      className={`w-full rounded-md border px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 ${
+                      className={`w-full rounded-md border bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 lg:flex-1 lg:min-h-[160px] ${
                         errors.message
                           ? 'border-rose-500 focus:ring-rose-200'
-                          : 'border-slate-300 focus:border-[#3AA3DC] focus:ring-[#3AA3DC]/25'
+                          : 'border-white/60 focus:border-white focus:ring-white/40'
                       }`}
                     />
                     {errors.message && (
-                      <p className="mt-1.5 text-xs font-medium text-rose-600">{errors.message}</p>
+                      <p className="mt-1.5 inline-block rounded bg-white/95 px-2 py-0.5 text-xs font-semibold text-rose-700">
+                        {errors.message}
+                      </p>
                     )}
                   </div>
 
                   <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center sm:justify-between">
-                    <p className="text-xs text-slate-500">
+                    <p className="text-xs text-white/95">
                       Direct inquiries can also be sent to{' '}
                       <a
                         href={`mailto:${COMPANY_INFO.email}`}
-                        className="font-semibold text-[#1D7CB3] hover:underline"
+                        className="font-semibold text-white underline hover:no-underline"
                       >
                         {COMPANY_INFO.email}
                       </a>
@@ -392,7 +414,7 @@ export const ContactPage: React.FC = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="inline-flex items-center justify-center gap-2 rounded-md bg-[#3AA3DC] px-7 py-3.5 text-sm font-semibold text-white hover:bg-[#298CC4] disabled:opacity-60 transition-colors whitespace-nowrap shrink-0"
+                      className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white bg-white px-7 py-2.5 text-[14px] md:text-[15px] lg:text-[16px] font-semibold text-[#0B2536] hover:bg-transparent hover:text-white disabled:opacity-60 transition-all duration-200 whitespace-nowrap shrink-0 cursor-pointer"
                     >
                       <Send className="h-4 w-4" aria-hidden="true" />
                       <span>{isSubmitting ? 'Submitting...' : 'Submit Inquiry'}</span>

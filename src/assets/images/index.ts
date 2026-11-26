@@ -31,6 +31,7 @@ export const SITE_IMAGES = {
   aboutHeroBg: '/assets/aistudio/image_7e854ad1_9de6c98f.jpg',
   aboutMissionBg: '/assets/aistudio/About-Us_5ea5f5c4.jpg',
   servicesHeroBg: '/assets/aistudio/services2_57e699d7.png',
+  contactHeroBg: '/assets/aistudio/services2_57e699d7.png',
   heroSlides: {
     aiData: heroAiData,
     cloudDevops: heroCloudDevops,

@@ -103,12 +103,8 @@ export const Header: React.FC<HeaderProps> = ({ activePage }) => {
             aria-current={activePage === 'contact' ? 'page' : undefined}
             className={`hidden sm:inline-flex items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold whitespace-nowrap shrink-0 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B857] ${
               useLightSurface
-                ? activePage === 'contact'
-                  ? 'bg-[#0B2536] text-white'
-                  : 'bg-[#10B857] text-white hover:bg-[#0D9647]'
-                : activePage === 'contact'
-                  ? 'bg-white text-[#0B2536]'
-                  : 'border border-white/75 bg-white/10 text-white hover:bg-white hover:text-[#0B2536]'
+                ? 'bg-[#10B857] text-white hover:bg-[#0D9647]'
+                : 'border border-white/75 bg-white/10 text-white hover:bg-white hover:text-[#0B2536]'
             }`}
           >
             Contact Us

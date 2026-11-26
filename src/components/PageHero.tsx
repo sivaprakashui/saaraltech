@@ -7,8 +7,10 @@ interface PageHeroProps {
   title: string;
   description: string;
   breadcrumbCurrent: string;
-  backgroundImage?: string;
+  backgroundImage?: string | null;
+  backgroundGradient?: string;
   overlayClassName?: string;
+  overlayStyle?: React.CSSProperties;
   titleClassName?: string;
   descriptionClassName?: string;
 }
@@ -19,18 +21,27 @@ export const PageHero: React.FC<PageHeroProps> = ({
   description,
   breadcrumbCurrent,
   backgroundImage = SITE_IMAGES.homeHeroBg,
+  backgroundGradient,
   overlayClassName = 'bg-gradient-to-br from-[#061D2E]/88 via-[#0A2F44]/74 to-[#0B3D54]/58',
+  overlayStyle,
   titleClassName = 'text-[30px] sm:text-[40px] lg:text-[54px] font-semibold tracking-tight text-white leading-[1.2]',
   descriptionClassName = 'max-w-2xl text-[15px] md:text-[16px] lg:text-[18px] font-normal leading-[1.6] text-slate-100',
 }) => {
+  const heroBgStyle: React.CSSProperties | undefined = backgroundGradient
+    ? { backgroundImage: backgroundGradient }
+    : backgroundImage
+      ? { backgroundImage: `url('${backgroundImage}')` }
+      : undefined;
+
   return (
     <section
-      className="relative overflow-hidden bg-[#060D0A] bg-cover bg-center text-white font-sans"
-      style={{ backgroundImage: `url('${backgroundImage}')` }}
+      className="relative overflow-hidden bg-[#061D2E] bg-cover bg-center text-white font-sans"
+      style={heroBgStyle}
     >
       <div
         aria-hidden="true"
         className={`pointer-events-none absolute inset-0 ${overlayClassName}`}
+        style={overlayStyle}
       />
       <div className="relative mx-auto max-w-7xl px-4 pt-28 pb-16 sm:px-6 sm:pt-32 sm:pb-20 lg:px-8 lg:pt-36 lg:pb-22">
         <nav aria-label="Breadcrumb" data-gsap="hero-stagger" className="mb-6 flex items-center gap-2 text-[14px] md:text-[15px] font-normal text-slate-200">
