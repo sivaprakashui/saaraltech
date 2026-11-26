@@ -89,6 +89,14 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
 ];
 
+export interface ServiceCaseStudy {
+  tag: string;
+  title: string;
+  problem: string;
+  built: string[];
+  result: string;
+}
+
 export interface ServiceItem {
   id: string;
   index: string;
@@ -101,6 +109,7 @@ export interface ServiceItem {
   deliverables: string[];
   outcomes: { value: string; label: string }[];
   stack: string[];
+  caseStudies: ServiceCaseStudy[];
 }
 
 export const SERVICES: ServiceItem[] = [
@@ -126,6 +135,34 @@ export const SERVICES: ServiceItem[] = [
       { value: '100%', label: 'Automated schema validation before warehouse load' },
     ],
     stack: ['Python', 'Apache Spark', 'Kafka', 'Snowflake', 'dbt', 'PyTorch'],
+    caseStudies: [
+      {
+        tag: 'Lakehouse Architecture',
+        title: 'Unified cold-chain telemetry & demand forecasting',
+        problem:
+          'Fragmented carrier GPS streams, warehouse ERP exports, and customs logs arrived in 6-hour batch delays, preventing teams from catching cold-chain spoilage before delivery.',
+        built: [
+          'Event-driven Kafka and Spark Structured Streaming ingestion pipeline',
+          'Medallion lakehouse tables on Snowflake with dbt quality contracts',
+          'Real-time ETA and temperature excursion alerts routed to dispatch',
+        ],
+        result:
+          'Ingestion latency dropped from 6 hours to under 90 seconds, cutting perishable transit spoilage by 31% across regional hubs.',
+      },
+      {
+        tag: 'Document AI & RAG',
+        title: 'Automated claims packet extraction pipeline',
+        problem:
+          'Adjusters manually keyed data from scanned loss runs, policy schedules, and repair invoices, creating multi-day backlogs during peak claim surges.',
+        built: [
+          'OCR and domain-tuned RAG extraction pipeline for PDFs and scans',
+          'Schema-validated JSON normalization into actuarial data marts',
+          'Confidence scoring with human-in-the-loop review queues',
+        ],
+        result:
+          'First-notice-of-loss triage turnaround compressed by 64% while maintaining 99.2% audited field accuracy.',
+      },
+    ],
   },
   {
     id: 'data-bi',
@@ -149,6 +186,34 @@ export const SERVICES: ServiceItem[] = [
       { value: 'Single', label: 'Governed KPI dictionary shared across departments' },
     ],
     stack: ['Power BI', 'Looker', 'SQL', 'dbt Core', 'BigQuery', 'Apache Superset'],
+    caseStudies: [
+      {
+        tag: 'Semantic BI Layer',
+        title: 'Multi-store margin & markdown intelligence',
+        problem:
+          'Finance and merchandising teams maintained conflicting spreadsheet definitions for gross margin and promotion lift, delaying weekly inventory markdown decisions.',
+        built: [
+          'Certified dbt Core semantic layer unifying POS, ERP, and returns',
+          'Row-level governed Power BI executive and buyer workspaces',
+          'SKU-level price elasticity and stockout risk forecasting models',
+        ],
+        result:
+          'Eliminated 14 hours of weekly manual reconciliation per finance unit and improved seasonal sell-through margin by 4.8%.',
+      },
+      {
+        tag: 'Regulatory Analytics',
+        title: 'Real-time portfolio risk & liquidity reporting',
+        problem:
+          'Banking analysts waited until overnight batch completion to inspect intra-day credit concentration and liquidity covenant thresholds.',
+        built: [
+          'Incremental BigQuery analytical models with automated lineage audit',
+          'Looker executive risk cockpits with threshold breach alerts',
+          'Automated reconciliation checks across core ledger feeds',
+        ],
+        result:
+          'Audit-ready risk snapshots became available in under 10 minutes with a single governed KPI dictionary across compliance teams.',
+      },
+    ],
   },
   {
     id: 'php-modernization',
@@ -172,6 +237,34 @@ export const SERVICES: ServiceItem[] = [
       { value: '3.4x', label: 'Faster request handling under PHP 8.3 OPcache JIT' },
     ],
     stack: ['PHP 8.3', 'Laravel', 'Symfony', 'Rector', 'PostgreSQL', 'Redis'],
+    caseStudies: [
+      {
+        tag: 'Strangler Migration',
+        title: 'Zero-downtime ERP upgrade from PHP 5.6 to 8.3',
+        problem:
+          'A mission-critical B2B billing and fulfillment portal running on unsupported PHP 5.6 suffered frequent memory exhaustion and blocked security patching.',
+        built: [
+          'Automated Rector static analysis and typed PHP 8.3+ refactoring',
+          'Laravel 11 API-first gateway decoupling billing from legacy views',
+          'Comprehensive Pest regression suite gating every canary cutover',
+        ],
+        result:
+          'Completed staged migration with zero unplanned downtime and delivered 3.4x faster API throughput under peak invoicing loads.',
+      },
+      {
+        tag: 'API Decoupling',
+        title: 'Modernizing policy administration portals',
+        problem:
+          'Tightly coupled PHP 7.1 templates and unindexed relational queries stalled partner quote generation above 4 seconds per request.',
+        built: [
+          'Symfony 7 LTS domain services with strict DTO type enforcement',
+          'PostgreSQL schema normalization and Redis query caching layer',
+          'OpenAPI contracts enabling parallel frontend modernization',
+        ],
+        result:
+          'Partner quote latency fell below 280 ms while eliminating known legacy runtime vulnerabilities.',
+      },
+    ],
   },
   {
     id: 'devops-cloud',
@@ -195,6 +288,34 @@ export const SERVICES: ServiceItem[] = [
       { value: '< 15 min', label: 'Automated rollback and multi-zone recovery time' },
     ],
     stack: ['AWS', 'Azure', 'Kubernetes', 'Terraform', 'Docker', 'GitHub Actions'],
+    caseStudies: [
+      {
+        tag: 'Multi-Cloud IaC',
+        title: 'Reproducible Kubernetes & Terraform platform',
+        problem:
+          'Manual console-configured cloud environments caused configuration drift between staging and production, turning routine releases into weekend rollbacks.',
+        built: [
+          'Modular Terraform infrastructure-as-code across AWS and Azure',
+          'Hardened EKS clusters with blue-green progressive delivery gates',
+          'Automated container vulnerability scanning in GitHub Actions',
+        ],
+        result:
+          'Deployment lead time fell by 68% with deterministic sub-15-minute multi-zone recovery guarantees.',
+      },
+      {
+        tag: 'Cloud FinOps',
+        title: 'Autoscaling optimization & observability mesh',
+        problem:
+          'Over-provisioned workloads and missing trace instrumentation obscured why monthly cloud spend spiked 40% quarter-over-quarter.',
+        built: [
+          'OpenTelemetry, Prometheus, and Grafana full-stack SLO dashboards',
+          'Node right-sizing and spot-capacity autoscaling policies',
+          'Automated idle-environment teardown for non-production clusters',
+        ],
+        result:
+          'Reduced monthly cloud compute spend by 35% while maintaining 99.95% SLA across customer-facing services.',
+      },
+    ],
   },
 ];
 
